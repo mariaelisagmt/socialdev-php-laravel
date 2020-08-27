@@ -52,7 +52,7 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'usr_codigo' => ['required', 'string', 'unique: usuarios,usr_codigo'],
+            'usr_codigo' => ['required', 'string'],
             'usr_nome' => ['required', 'string'],
             'usr_email' => ['required', 'string'],
             'usr_senha' => ['required', 'string', 'min:8'],

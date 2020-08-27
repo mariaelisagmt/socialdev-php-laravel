@@ -28,4 +28,14 @@ class Usuario extends Authenticatable
         //'usr_codigo' => 'string'
     ];
 
+    public function getAuthPassword()
+    {
+        return $this->usr_senha;
+    }
+    public function getAuthIdentifier()
+    {
+        return $this->usr_codigo;
+    }
+
+
 }
