@@ -25,7 +25,7 @@ class Usuario extends Authenticatable
 
     //Mudança de tipos
     protected $casts = [
-        'usr_codigo' => 'string'
+        //'usr_codigo' => 'string'
     ];
 
 }
